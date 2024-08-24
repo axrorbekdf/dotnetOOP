@@ -1,12 +1,24 @@
 ﻿using OOPLESSON.CLasses;
 
-Console.WriteLine("Yoshingizni kiriting:");
-int age = Convert.ToInt32(Console.ReadLine());
+namespace KESCHA{
+    class Program{
+        static void Main(){
+            string userName = "";
+            Console.WriteLine("Ismingizni kiriting:");
+            userName = Console.ReadLine();
 
-Animal mushuk = new Animal(name: "Kescha", userAge: age, animalAge: 3);
+            Console.WriteLine("Yoshingizni kiriting:");
+            int userAge = Convert.ToInt32(Console.ReadLine());
 
-// mushuk.Age = 3;
+            // Animal mushuk = new Animal(name: "Kescha", userAge: age, animalAge: 3);
+            Animal mushuk = new Animal(name: "Kescha", animalAge: 3);
 
-Console.WriteLine($"Hayvon nomi: {mushuk.Name}");
-Console.WriteLine($"Hayvon yoshi: {mushuk.Age}");
-Console.WriteLine($"Sizning va Keschaning yoshi orasidagi farq: {mushuk.AgeDifference}");
+            // mushuk.Age = 3;
+            mushuk.CalculateAgeDifference(userAge: userAge);
+            mushuk.PrintInfo();
+            mushuk.CompareAges(userAge: userAge);
+            Console.WriteLine($"{mushuk.Name}ning do'stlari haqida aytib beraman!");
+            mushuk.TellAboutFriends(userName: userName, userAge: userAge);
+        }
+    }
+}
