@@ -31,6 +31,12 @@ namespace OOPLESSON.CLasses{
             AgeDifference = 0;
         }
 
+        public Animal(string name, int animalAge)
+        {
+            Name = name;
+            Age = animalAge;
+        }
+
         public Animal(string name, int userAge, int animalAge)
         {
             Name = name;
@@ -39,13 +45,13 @@ namespace OOPLESSON.CLasses{
             CalculateAgeDifferenceWithNoReturn(userAge: userAge, animalAge: animalAge);
         }
 
+        public void CalculateAgeDifference(int userAge){
+            AgeDifference = userAge - Age; 
+        }
+
         private int CalculateAgeDifference(int userAge, int animalAge){
             return userAge - animalAge; 
         }
-
-        // private int CalculateAgeDifference(int userAge, int animalAge, int test = 0){
-        //     return userAge - animalAge; 
-        // }
 
         private void CalculateAgeDifferenceWithNoReturn(int userAge, int animalAge){
             AgeDifference = userAge - animalAge;
