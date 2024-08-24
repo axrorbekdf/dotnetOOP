@@ -3,8 +3,9 @@
 namespace KESCHA{
     class Program{
         static void Main(){
+            string userName = "";
             Console.WriteLine("Ismingizni kiriting:");
-            string userName = Console.ReadLine();
+            userName = Console.ReadLine();
 
             Console.WriteLine("Yoshingizni kiriting:");
             int userAge = Convert.ToInt32(Console.ReadLine());
