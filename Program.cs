@@ -1,6 +1,7 @@
 ﻿using System.Security.Principal;
 using Microsoft.VisualBasic;
 using OOPLESSON.CLasses;
+using OOPLESSON.Enums;
 
 namespace KESCHA{
     class Program{
@@ -20,6 +21,7 @@ namespace KESCHA{
 
 
                 // mushuk.Age = 3;
+                mushuk.Type = PetTypes.Cat;
                 mushuk.CalculateAgeDifference(userAge: userAge);
                 mushuk.Greeting(userName: userName);
                 mushuk.PrintInfo();
@@ -30,7 +32,7 @@ namespace KESCHA{
 
                 Console.WriteLine("\n");
 
-
+                birdy.Type = PetTypes.Bird;
                 birdy.CalculateAgeDifference(userAge: userAge);
                 birdy.Greeting(userName: userName);
                 birdy.PrintInfo();

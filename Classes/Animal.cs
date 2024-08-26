@@ -1,3 +1,5 @@
+using OOPLESSON.Enums;
+
 namespace OOPLESSON.CLasses{
     public class Animal : IAnimal
     {
@@ -16,6 +18,7 @@ namespace OOPLESSON.CLasses{
 
         public string Name{ get; set; }
         public int Age{ get; set; }
+        public PetTypes  Type{ get; set; }
 
         public int AgeDifference{ get; set; }
 
@@ -101,6 +104,10 @@ namespace OOPLESSON.CLasses{
             Console.WriteLine($"Hayvon yoshi: {Age}");
         }
 
+        public void PrintType(){
+            Console.WriteLine($"Hayvon turi: {Type}");
+        }
+
         public void PrintAgeDifference(){
             Console.WriteLine($"Sizning va Keschaning yoshi orasidagi farq: {AgeDifference}");
         }
@@ -109,6 +116,7 @@ namespace OOPLESSON.CLasses{
             PrintName();
             PrintAge();
             PrintAgeDifference();
+            PrintType();
         }
     }
 }
