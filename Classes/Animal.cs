@@ -1,5 +1,5 @@
 namespace OOPLESSON.CLasses{
-    class Animal
+    public class Animal
     {
         // private int age;
 
