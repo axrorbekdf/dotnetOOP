@@ -1,5 +1,5 @@
 namespace OOPLESSON.CLasses{
-    public class Animal
+    public class Animal : IAnimal
     {
         // private int age;
 
@@ -18,6 +18,8 @@ namespace OOPLESSON.CLasses{
         public int Age{ get; set; }
 
         public int AgeDifference{ get; set; }
+
+        public DateTimeOffset HappyDay{get; set;}
         public string[,] Friends = new string[3, 2]{
                 {"Kasee","2"},
                 {"Vasya","3"},
@@ -29,12 +31,14 @@ namespace OOPLESSON.CLasses{
             Name = "No name";
             Age = 0;
             AgeDifference = 0;
+            HappyDay = DateTimeOffset.Now;
         }
 
         public Animal(string name, int animalAge)
         {
             Name = name;
             Age = animalAge;
+            HappyDay = DateTimeOffset.Now;
         }
 
         public Animal(string name, int userAge, int animalAge)
@@ -43,6 +47,7 @@ namespace OOPLESSON.CLasses{
             Age = animalAge;
             // AgeDifference = CalculateAgeDifference(userAge: userAge, animalAge: animalAge);
             CalculateAgeDifferenceWithNoReturn(userAge: userAge, animalAge: animalAge);
+            HappyDay = DateTimeOffset.Now;
         }
 
         public virtual void Greeting(string userName = ""){

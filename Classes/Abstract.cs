@@ -1,6 +1,6 @@
-namespace OOPLESSON;
+namespace OOPLESSON.CLasses;
 
-public abstract class Abstrac
+public abstract class Abstract
 {
     // bu classdan obyekt olib bo'lmaydi faqat meros olish uchun ishlatiladi.
     public abstract void test();

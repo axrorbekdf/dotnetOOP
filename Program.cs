@@ -26,7 +26,7 @@ namespace KESCHA{
                 mushuk.CompareAges(userAge: userAge);
                 Console.WriteLine($"{mushuk.Name}ning do'stlari haqida aytib beraman!");
                 mushuk.TellAboutFriends(userName: userName, userAge: userAge);
-
+                Console.WriteLine($"Tu'g'ilgan kuni: {mushuk.HappyDay}");
 
                 Console.WriteLine("\n");
 
@@ -37,6 +37,7 @@ namespace KESCHA{
                 birdy.CompareAges(userAge: userAge);
                 Console.WriteLine($"{birdy.Name}ning do'stlari haqida aytib beraman!");
                 birdy.TellAboutFriends(userName: userName, userAge: userAge);
+                Console.WriteLine($"Tu'g'ilgan kuni: {birdy.HappyDay}");
             }catch(FormatException error){
                 Console.WriteLine($"{error.Message}");
             }catch(Exception errors){
