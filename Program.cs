@@ -1,4 +1,5 @@
-﻿using OOPLESSON.CLasses;
+﻿using System.Security.Principal;
+using OOPLESSON.CLasses;
 
 namespace KESCHA{
     class Program{
@@ -6,6 +7,7 @@ namespace KESCHA{
             string userName = "";
             Console.WriteLine("Ismingizni kiriting:");
             userName = Console.ReadLine();
+
 
             Console.WriteLine("Yoshingizni kiriting:");
             int userAge = Convert.ToInt32(Console.ReadLine());
