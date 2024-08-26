@@ -10,20 +10,25 @@ namespace KESCHA{
             Console.WriteLine("Yoshingizni kiriting:");
             int userAge = Convert.ToInt32(Console.ReadLine());
 
-
-
             // Animal mushuk = new Animal(name: "Kescha", userAge: age, animalAge: 3);
-            Animal mushuk = new Bird(name: "Kescha", animalAge: 3);
+            Animal mushuk = new Cat(name: "Kescha", animalAge: 3);
+            Animal birdy = new Bird(name: "Kasee", animalAge: 5);
+
+
             // mushuk.Age = 3;
             mushuk.CalculateAgeDifference(userAge: userAge);
+            mushuk.Greeting(userName: userName);
             mushuk.PrintInfo();
             mushuk.CompareAges(userAge: userAge);
             Console.WriteLine($"{mushuk.Name}ning do'stlari haqida aytib beraman!");
             mushuk.TellAboutFriends(userName: userName, userAge: userAge);
 
 
-            Animal birdy = new Cat(name: "Kasee", animalAge: 5);
+            Console.WriteLine("\n");
+
+
             birdy.CalculateAgeDifference(userAge: userAge);
+            birdy.Greeting(userName: userName);
             birdy.PrintInfo();
             birdy.CompareAges(userAge: userAge);
             Console.WriteLine($"{birdy.Name}ning do'stlari haqida aytib beraman!");

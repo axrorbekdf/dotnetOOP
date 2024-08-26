@@ -45,6 +45,17 @@ namespace OOPLESSON.CLasses{
             CalculateAgeDifferenceWithNoReturn(userAge: userAge, animalAge: animalAge);
         }
 
+        public virtual void Greeting(string userName = ""){
+
+            if(userName == ""){
+                Console.WriteLine("Not name Hello!");
+            }else{
+                Console.WriteLine($"{userName} Hello!");
+            }
+
+
+        }
+
         public void CalculateAgeDifference(int userAge){
             AgeDifference = userAge - Age; 
         }
